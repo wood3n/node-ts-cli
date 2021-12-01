@@ -1,0 +1,38 @@
+{
+  "name": "node-ts-cli",
+  "version": "1.0.0",
+  "author": "wangkai",
+  "homepage": "https://github.com/wood3n/node-ts-cli",
+  "description": "a nodejs boilerplate based on typescript and esbuild",
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "esbuild"
+  ],
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.13"
+  },
+  "files": [
+    "build"
+  ],
+  "bin": {
+    "node-ts-cli": "./bin/index.js"
+  },
+  "scripts": {
+    "dev": "node ./config/esbuild.dev.config",
+    "build": "node ./config/esbuild.pro.config"
+  },
+  "dependencies": {
+    "commander": "^8.3.0",
+    "please-upgrade-node": "^3.2.0",
+    "typescript": "^4.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.11",
+    "esbuild": "^0.14.1",
+    "esbuild-node-externals": "^1.4.0",
+    "ts-node": "^10.4.0"
+  }
+}
