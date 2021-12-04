@@ -15,6 +15,7 @@
     "node": ">=16.13"
   },
   "files": [
+    "bin",
     "build"
   ],
   "bin": {

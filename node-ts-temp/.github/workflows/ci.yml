@@ -6,9 +6,7 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [master]
-  pull_request:
-    branches: [master]
+    branches: [main]
 
 jobs:
   # 构建
@@ -24,7 +22,7 @@ jobs:
       - name: setup node.js environment
         uses: actions/setup-node@v2.4.1
         with:
-          node-version: '>=16.13'
+          node-version: ">=16.13"
           registry-url: https://registry.npmjs.org/
       - name: install dependencies
         run: npm install
