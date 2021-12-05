@@ -1,6 +1,4 @@
-<p align="center">
-node-ts-boilerplate
-</p>
+<h1 align="center">node-ts-boilerplate</h1>
 
 # usage
 
